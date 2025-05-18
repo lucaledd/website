@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-smooth: 'Montserrat', 'Century Gothic', 'Segoe UI', 'Arial', sans-serif;
+  --background-color: #181818;
+  --text-color: #c7c7c7;
+  --bezier: cubic-bezier(.25, .46, .45, .94);
+  
+  font-family: var(--font-smooth);
+  font-size: .75em;
+  
+  color-scheme: dark;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+.render {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.square {
+  display: inline-block;
+
+  opacity: 0;
+  
+  border: 1px white solid;
+}
